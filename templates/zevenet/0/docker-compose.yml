@@ -1,0 +1,10 @@
+external-lb:
+  image: rancher/external-lb:v0.1.1
+  command: -provider=zevenet
+  expose: 
+   - 1000
+  environment:
+    ZAPI_HOST: ${ZAPI_HOST}
+    ZAPI_FARM: ${ZAPI_FARM}
+    ZAPI_KEY: ${ZAPI_KEY}
+    LB_TARGET_RANCHER_SUFFIX: ${LB_TARGET_RANCHER_SUFFIX}

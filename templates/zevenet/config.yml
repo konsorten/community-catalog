@@ -1,0 +1,5 @@
+name: Zevenet Balancer
+description: |
+  Rancher External LB service powered by Zevenet loadbalancer
+version: v0.1.0
+category: Load Balancing
